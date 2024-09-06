@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Product Price Comparision Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+    <h1>E-commerce Product Price Comparision</h1>
+    <div class="container">
+        <div class="input-btn">
+            <input type="text" id="mycity" placeholder="Enter Product Name" />
+            <button id="btn1" onclick="citysubmit()">Go</button>
+        </div>
+        <p id="city-error">Enter correct Product Name</p>
+		</div>
+		<div class="container2">
+        <div id="weathercard">
+		<table class="table" border="2">
+			
+			<thead class="thead-primary">
+				<tr>
+					<th>Product Title</th>
+					<th>Product Image</th>
+					<th>Product Low Price</th>
+					<th>Is Availabe</th>
+					<th>Compare</th>
+				</tr>
+			</thead>
+			
+			<tbody id="data-output">
+			</tbody>
+		</table>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>

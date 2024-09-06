@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+
+	</head>
+<style>
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+a { text-decoration: none; }
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+.main {
+  border: 1px solid black;
+  margin: 1rem;
+  margin-bottom:20px;
+  padding: 2rem 2rem;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  flex-wrap:wrap;
+}
+.card{
+  margin-bottom:30px;
+  padding-top:30px;
+}
+#body {
+    display: none;
+}
+#amazonspec,#flipkartspec,#cromaspec,#snapdealspec,#tataclickspec,#shopcluesspec,#infibeamspec,#paytmspec,#yebhispec,#naaptolspec,#indiatimesspec,#ebayspec,#gadgets360spec,#mispec,#homeshop18spec{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+</style>
+<body id="body" onload="execute()">
+
+<h2 style="text-align:center">Product Card</h2>
+<div class="main">
+<div class="card"> 
+  <img src="https://images-api.datayuge.in/image/YW1hem9uX3N0b3JlLnBuZw.png" alt="Product Info" style="width:50%">
+  <img id="amazonimg" src="" alt="Product Info" style="width:50%">
+  <h1 id="amazonname"> </h1>
+  <p id="amazonprice" class="price"> </p>
+  <p id="amazonspec"> </p>
+  <p><button id="amazonbuy">Buy Now</button></p>
+</div>
+<div class="card">
+   <img src="https://images-api.datayuge.in/image/ZmxpcGthcnRfc3RvcmUucG5n.png" alt="Product Info" style="width:50%">
+  <img id="flipkartimg" src="" alt="Product Info" style="width:50%">
+  <h1 id="flipkartname">Tailored Jeans</h1>
+  <p id="flipkartprice" class="price"></p>
+  <p id="flipkartspec"></p>
+  <p><button id="flipkartbuy">Buy Now!</button></p>
+</div>
+<div class="card">
+  <img src="http://c223968.r68.cf1.rackcdn.com/croma_store.png" alt="Product Info" style="width:50%">
+  <img id="cromaimg" src="" alt="Product Info" style="width:50%">
+  <h1 id="cromaname">Tailored Jeans</h1>
+  <p id="cromaprice" class="price">$19.99</p>
+  <p id="cromaspec"></p>
+  <p><button id="cromabuy">Buy Now!</button></p>
+</div>
+<div class="card">
+   <img src="http://c223968.r68.cf1.rackcdn.com/snapdeal_store.png" alt="Product Info" style="width:50%">
+  <img id="snapdealimg" src="https://www.weboo.co/wp-content/uploads/2021/06/SIM-Free-iPhone-12-mini-256GB-5G-Mobile-Phone-Purple-774.jpeg" alt="Product Info" style="width:50%">
+  <h1 id="snapdealname">Tailored Jeans</h1>
+  <p id ="snapdealprice" class="price">$19.99</p>
+  <p id="snapdealspec"></p>
+  <p><button id="snapdealbuy">Buy Now!</button></p>
+</div>
+<div class="card">
+   <img src="http://c223968.r68.cf1.rackcdn.com/tatacliq_store.png" alt="Product Info" style="width:50%">
+  <img id="tataclickimg" src="" alt="Product Info" style="width:50%">
+  <h1 id="tataclickname">Tailored Jeans</h1>
+  <p id="tataclickprice" class="price">$19.99</p>
+  <p id="tataclickspec"></p>
+  <p><button id="tataclickbuy">Buy Now!</button></p>
+</div>
+<div class="card">
+   <img src="http://c223968.r68.cf1.rackcdn.com/shopclues_store.png" alt="Product Info" style="width:50%">
+  <img id="shopcluesimg" src="https://www.weboo.co/wp-content/uploads/2021/06/SIM-Free-iPhone-12-mini-256GB-5G-Mobile-Phone-Purple-774.jpeg" alt="Product Info" style="width:50%">
+  <h1 id="shopcluesname">Tailored Jeans</h1>
+  <p id="shopcluesprice" class="price">$19.99</p>
+  <p id="shopcluesspec"></p>
+  <p><button id="shopcluesbuy" >Buy Now!</button></p>
+</div>
+<div class="card">
+   <img src="http://c223968.r68.cf1.rackcdn.com/infibeam_store.png" alt="Product Info" style="width:50%">
+  <img id="infibeamimg" src="https://www.weboo.co/wp-content/uploads/2021/06/SIM-Free-iPhone-12-mini-256GB-5G-Mobile-Phone-Purple-774.jpeg" alt="Product Info" style="width:50%">
+  <h1 id="infibeamname">Tailored Jeans</h1>
+  <p id="infibeamprice" class="price">$19.99</p>
+  <p id="infibeamspec"></p>
+  <p><button id="infibeambuy">Buy Now!</button></p>
+</div>
+<div class="card">
+   <img src="http://c223968.r68.cf1.rackcdn.com/paytm_store.png" alt="Product Info" style="width:50%">
+  <img id="paytmimg" src="https://www.weboo.co/wp-content/uploads/2021/06/SIM-Free-iPhone-12-mini-256GB-5G-Mobile-Phone-Purple-774.jpeg" alt="Product Info" style="width:50%">
+  <h1 id="paytmname">Tailored Jeans</h1>
+  <p id="paytmprice" class="price">$19.99</p>
+  <p id="paytmspec"></p>
+  <p><button id="paytmbuy">Buy Now!</button></p>
+</div>
+<div class="card">
+   <img src="http://c223968.r68.cf1.rackcdn.com/yebhi_store.png" alt="Product Info" style="width:50%">
+  <img id="yebhiimg" src="https://www.weboo.co/wp-content/uploads/2021/06/SIM-Free-iPhone-12-mini-256GB-5G-Mobile-Phone-Purple-774.jpeg" alt="Product Info" style="width:50%">
+  <h1 id="yebhiname">Tailored Jeans</h1>
+  <p id="yebhiprice" class="price">$19.99</p>
+  <p id="yebhispec"></p>
+  <p><button id="yebhibuy">Buy Now!</button></p>
+</div>
+<div class="card">
+   <img src="http://c223968.r68.cf1.rackcdn.com/naaptol_store.png" alt="Product Info" style="width:50%">
+  <img id="naaptolimg" src="https://www.weboo.co/wp-content/uploads/2021/06/SIM-Free-iPhone-12-mini-256GB-5G-Mobile-Phone-Purple-774.jpeg" alt="Product Info" style="width:50%">
+  <h1 id="naaptolname">Tailored Jeans</h1>
+  <p id="naaptolprice" class="price">$19.99</p>
+  <p id="naaptolspec"></p>
+  <p><button id="naaptolbuy">Buy Now!</button></p>
+</div>
+<div class="card">
+   <img src="http://c223968.r68.cf1.rackcdn.com/indiatimes_store.png" alt="Product Info" style="width:50%">
+  <img id="indiatimesimg" src="https://www.weboo.co/wp-content/uploads/2021/06/SIM-Free-iPhone-12-mini-256GB-5G-Mobile-Phone-Purple-774.jpeg" alt="Product Info" style="width:50%">
+  <h1 id="indiatimesname">Tailored Jeans</h1>
+  <p id="indiatimesprice" class="price">$19.99</p>
+  <p id="indiatimesspec"></p>
+  <p><button id="indiatimesbuy">Buy Now!</button></p>
+</div>
+<div class="card">
+   <img src="http://c223968.r68.cf1.rackcdn.com/ebay_store.png" alt="Product Info" style="width:50%">
+  <img id="ebayimg" src="https://www.weboo.co/wp-content/uploads/2021/06/SIM-Free-iPhone-12-mini-256GB-5G-Mobile-Phone-Purple-774.jpeg" alt="Product Info" style="width:50%">
+  <h1 id="ebayname">Tailored Jeans</h1>
+  <p id="ebayprice" class="price">$19.99</p>
+  <p id="ebayspec"></p>
+  <p><button id="ebaybuy">Buy Now!</button></p>
+</div>
+<div class="card">
+   <img src="http://c223968.r68.cf1.rackcdn.com/gadgets360_store.png" alt="Product Info" style="width:50%">
+  <img id="gadgets360img" src="https://www.weboo.co/wp-content/uploads/2021/06/SIM-Free-iPhone-12-mini-256GB-5G-Mobile-Phone-Purple-774.jpeg" alt="Product Info" style="width:50%">
+  <h1 id="gadgets360name">Tailored Jeans</h1>
+  <p id="gadgets360price" class="price">$19.99</p>
+  <p id="gadgets360spec"></p>
+  <p><button id="gadgets360buy">Buy Now!</button></p>
+</div>
+<div class="card">
+   <img src="http://c223968.r68.cf1.rackcdn.com/mi_store.png" alt="Product Info" style="width:50%">
+  <img id= "miimg" src="https://www.weboo.co/wp-content/uploads/2021/06/SIM-Free-iPhone-12-mini-256GB-5G-Mobile-Phone-Purple-774.jpeg" alt="Product Info" style="width:50%">
+  <h1 id="miname">Tailored Jeans</h1>
+  <p id="miprice"  class="price">$19.99</p>
+  <p id="mispec"></p>
+  <p><button id="mibuy">Buy Now!</button></p>
+</div>
+<div class="card">
+   <img src="http://c223968.r68.cf1.rackcdn.com/homeshop18_store.png" alt="Product Info" style="width:50%">
+  <img id="homeshop18img" src="" alt="Product Info" style="width:50%">
+  <h1 id="homeshop18name">Tailored Jeans</h1>
+  <p id="homeshop18price" class="price">$19.99</p>
+  <p id="homeshop18spec"></p>
+  <p><button id="homeshop18buy">Buy Now!</button></p>
+</div>
+</div>
+</body>
+<script src="compare.js"></script>
+</html>
